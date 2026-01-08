@@ -1,0 +1,106 @@
+/* Vehicle Details Page */
+.vehicle-detail-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left Column */
+.vehicle-hero-image {
+    height: 400px;
+    background-color: #eee;
+    border-radius: var(--radius);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.vehicle-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #111;
+}
+
+.vehicle-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.features-box {
+    margin-bottom: 30px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.feature-tag {
+    background: #e7f1ff;
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Right Column (Booking Card) */
+.booking-card-sticky {
+    background: var(--card);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 20px;
+}
+
+.price-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.price-amount {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #111;
+}
+
+.price-calculation {
+    margin-bottom: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Reviews */
+.reviews-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.review-item {
+    margin-bottom: 20px;
+    background: var(--card);
+    padding: 15px;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .vehicle-detail-layout {
+        flex-direction: column;
+    }
+
+    .vehicle-hero-image {
+        height: 250px;
+    }
+}

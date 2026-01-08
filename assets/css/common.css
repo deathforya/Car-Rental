@@ -1,0 +1,159 @@
+:root {
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --muted: #6c757d;
+  --accent: #0d6efd;
+  /* Bootstrap Primary Blue similar */
+  --accent-hover: #0b5ed7;
+  --accent-contrast: #ffffff;
+  --radius: 8px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: #212529;
+  margin: 0;
+  line-height: 1.5
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px
+}
+
+/* Header */
+.site-header {
+  background: transparent;
+  padding: 18px 0
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #eef6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px
+}
+
+.brand-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #07263b
+}
+
+/* Nav */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 18px
+}
+
+.nav-list {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.nav-link {
+  color: rgba(7, 18, 35, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 8px;
+  border-radius: 8px
+}
+
+.nav-link:hover {
+  background: rgba(15, 23, 42, 0.03)
+}
+
+/* Auth buttons group */
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.welcome {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-right: 6px
+}
+
+/* Buttons */
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eef6ff;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center
+}
+
+/* Footer */
+.site-footer {
+  padding: 28px 0;
+  text-align: center;
+  color: var(--muted)
+}
+
+/* Responsive adjustments */
+@media (max-width:720px) {
+  .nav-list {
+    display: none
+  }
+
+  .auth-buttons a.btn-primary {
+    padding: 8px 10px
+  }
+}

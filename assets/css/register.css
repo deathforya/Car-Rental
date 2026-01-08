@@ -1,0 +1,8 @@
+body.auth-page{display:flex;align-items:center;justify-content:center;height:100vh;background:linear-gradient(180deg,#fffbf0,#eef7ff)}
+.auth-card{width:420px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.08);padding:28px}
+.auth-card h1{margin:0 0 6px;font-size:1.4rem}
+.auth-card .muted{color:#6b7280;margin-bottom:18px}
+.auth-form label{display:block;margin-bottom:12px;font-size:0.9rem}
+.auth-form input{width:100%;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;margin-top:6px}
+.btn-primary{width:100%;padding:12px;border-radius:10px;font-weight:600}
+.small{font-size:0.85rem;color:#6b7280;margin-top:14px;text-align:center}
